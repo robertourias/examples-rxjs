@@ -9,6 +9,6 @@ function fromArray(array) {
 
 fromArray([1,2,3,4,5,6,7,8,9,10]).subscribe(
     n => console.log(n),
-    noop,
+    noop, // para não tratar o erro
     () => console.log('Fim')
 )
